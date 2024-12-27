@@ -1,0 +1,74 @@
+<!-- Grading Page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grading</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- Navigation menu with all the page links as well as a logo -->
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.jpg" id="logo" alt="Logo for toronto">
+            </a>
+            <a href="Attractions.html">Attractions</a>
+            <a href="Museums.html">Museums</a>
+            <a href="Food.html">Food</a>
+            <a href="Parks.html">Parks</a>
+            <a href="Wildlife.html">Wildlife</a>
+            <a href="Feedback.html">Feedback</a>
+        </nav>
+
+        <div class="content">
+            <h1>Grading</h1>
+            <hr>
+            <h2>Good Design</h2>
+            <p>I tried to use good design techniques such as good color contrast. Since Canada's colors are red and white, I based the site's color palette on those colors.
+                Red was used for the navigation bar and footer with a white text for contrast. Yellow was for the text to indicate which page you were currently on which stood out
+                on the red background, making it easily recognizable. </p>
+
+            <h2>Organization of Information</h2>
+            <p>All of the content on this site is split into individual pages. Each page has a theme. For example, Attractions page displays tourist sites, Food page displays dining recommendations, and so on.
+                That way, each page only has information that is relevant to the theme of the page so information is organized into different categories.</p>
+            
+            <h2>Content</h2>
+            <p>Every page on my site is filled with a good amount of content. Each place includes a picture and a few sentences to describe what they have to offer and why you may want to visit.</p>
+
+            <h2>Navigation</h2>
+            <p>As previously mentioned, the navigation bar on the top allows viewers to navigate around the site easily. To indicate which page you're currently on, the text turns yellow to indicate the current page. </p>
+
+            <h2>HTML / CSS</h2>
+            <p>HTML was used for the content of the site while CSS was used for the text formatting and layout styling. I made sure to keep these two files separate from each other,
+                so no inline was used in the HTML files. All pages are validated. HTML and CSS icons are visible in the footer where it will take you to the validator page.</p>
+            
+            <h2>Slideshow</h2>
+            <p>A brief slideshow is visible on the Wildlife page where the photos will rotate through to display some various animals that can be found in Toronto.</p>
+
+            <h2>Comments Form</h2>
+            <p>The comments form is accessible via the About Me page. Previous comments are displayed beneath the form regardless if the user submits a new comment. In comments.php, it validates and sanitizes the
+                comment before adding it to the database. MySQLi API calls are used.
+            </p>
+
+            <h2>DHTML</h2>
+            <p>The DHTML component(s) I created was to add a fade-in transition to all pages (minus the references page). When you navigate to each individual page, there is a short transition where the content and images
+                for the page will fade in.</p>
+
+            <h2>PHP</h2>
+            <p>PHP includes are on every page. Each content page references the header, nav, and footer PHP files so there is no duplicate code. PHP files were created for each page so it references the database to retrieve HTML content.</p>
+
+            <h2>Extra</h2>
+            <p>I added Favicons to each page, all pages except one or two, have a different emoji that is relevant to the topic of the page. A small but cute detail.</p>
+        </div>
+
+        <!-- Footer links to various pages -->
+        <footer>
+            <a href="References.html">References</a>
+            <a href="Grading.html" class="active">Grading</a>
+            <a href="AboutMe.html">About Me</a>
+        </footer>
+
+    </body>
+</html>

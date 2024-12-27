@@ -1,0 +1,113 @@
+<!-- Feedback Page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Toronto - Feedback</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- Navigation menu with all the page links as well as a logo -->
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.jpg" id="logo" alt="Logo for toronto">
+            </a>
+            <a href="Attractions.html">Attractions</a>
+            <a href="Museums.html">Museums</a>
+            <a href="Food.html">Food</a>
+            <a href="Parks.html">Parks</a>
+            <a href="Wildlife.html">Wildlife</a>
+            <a href="Feedback.html" class="active">Feedback</a>
+        </nav>
+
+        <!-- Thank you image (hidden until form is submitted)-->
+        <div id="thankYou">
+            <img src="images/thanks.png" alt="Thank you image">
+        </div>
+
+        <div class="feedback">
+            <form action="process.php" method="POST" onsubmit="return validateForm()">
+                <h2 class="underline">Please tell us about your visit!</h2>
+                <hr>
+                
+                <!-- Get name -->
+                <label>Enter your name:</label>
+                <input type="text" id="visitor" name="visitor" placeholder="Required Entry" required>
+                <br>
+                
+                <!-- Get group number -->
+                <label>How many people in your group:</label>
+                <input type="number" name="groupNum" min="0" max="100" step="1" value="1">
+                <br>
+
+                <!-- Get hometown -->
+                <label>Where are you from?</label>
+                <input type="text" id="home" name="home" placeholder="city">
+                <br>
+                
+                <!-- Date visited -->
+                <label>When did you visit?</label>
+                <input type="date" id="visitDate" name="vdate" required>
+                <br>
+                
+                <!-- Yes or no -->
+                <label>Have you visted before?</label>
+                <select name="visted" id="visited" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+        
+                <!-- Choose one -->
+                <fieldset>
+                    <legend>Favorite places visited?</legend>
+                    <input type="checkbox" name="fplace[]" value="CN Tower"><label>CN Tower</label><br>
+                    <input type="checkbox" name="fplace[]" value="Ripley's Aquarium"><label>Ripley's Aquarium</label><br>
+                    <input type="checkbox" name="fplace[]" value="Yonge-Dundas Square"><label>Yonge-Dundas Square</label><br>
+                    <input type="checkbox" name="fplace[]" value="Toronto Eaton Centre"><label>Toronto Eaton Centre</label><br>
+                    <input type="checkbox" name="fplace[]" value="Art Gallery of Ontario"><label>Art Gallery of Ontario</label><br>
+                    <input type="checkbox" name="fplace[]" value="Royal Ontario Museum"><label>Royal Ontario Museum</label><br>
+                    <input type="checkbox" name="fplace[]" value="Little Canada"><label>Little Canada</label><br>
+                    <input type="checkbox" name="fplace[]" value="Hong Kong Island Bakery"><label>Hong Kong Island Bakery</label><br>
+                    <input type="checkbox" name="fplace[]" value="Petit Potato"><label>Petit Potato</label><br>
+                    <input type="checkbox" name="fplace[]" value="High Park"><label>High Park</label><br>
+                    <input type="checkbox" name="fplace[]" value="Trinity Bellwoods Park"><label>Trinity Bellwoods Park</label><br>
+                    <input type="checkbox" name="fplace[]" value="Trillium Park"><label>Trillium Park</label><br>
+                </fieldset>
+                
+                <br>Please rate Toronto!<br>
+                <p>0
+                <input type="range" name="rating" min="0" max="10" step="1" list="set">
+                <datalist id="set">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </datalist>
+                10</p>
+                
+                <div id="button">
+                    <input type="submit" value="Send Email">
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer links to various pages -->
+        <footer>
+            <a href="References.html">References</a>
+            <a href="Grading.html">Grading</a>
+            <a href="AboutMe.html">About Me</a>
+        </footer>
+
+    </body>
+</html>

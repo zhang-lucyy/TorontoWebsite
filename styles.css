@@ -1,0 +1,234 @@
+#logo {
+	width: 120px;
+	height: 120px
+}
+
+/**
+* Navigation menu links
+*/
+nav {
+    display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 2vw;
+    margin-bottom: 20px;
+    background-color: rgb(222, 71, 71);
+}
+
+/*
+* Styling for the general layout of each page
+*/
+.content {
+    overflow: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.content img {
+    max-width: 30%;
+    max-height: 500px;
+    margin: 20px 15px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.content p {
+    margin-right: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+/**
+* Footer at the bottom of page
+*/
+footer {
+    display: flex;
+    background-color: rgb(222, 71, 71);
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+/**
+* Make link yellow to represent the page you're currently on
+*/
+nav a.active {
+    color: yellow;
+}
+
+footer a.active {
+    color: yellow;
+}
+
+/**
+* Reference Page Styles
+*/
+#refs {
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    text-align: center;
+}
+
+#refs th {
+    font-size: 1.3rem;
+}
+
+#refs td {
+    border: 1px solid black;
+    font-size: 1.2rem;
+}
+
+#refs td a {
+    color: blue;
+}
+
+#refs td img {
+    max-width: 150px;
+    height: auto;
+}
+
+/**
+* Feedback Page Styles
+*/
+.feedback {
+    overflow: hidden;
+    margin-left: 500px;
+    margin-right: 500px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#thankYou {
+    display: none;
+    
+}
+
+form {
+    padding-bottom: 20px;
+}
+
+#visitor {
+    width: 150px;
+}
+
+#home {
+    width: 100px;
+}
+
+/**
+* Comments Page Styles
+*/
+table {
+    border: 2px solid rgb(97, 97, 97);
+    background-color: rgb(217, 218, 219);
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    border: 2px solid rgb(97, 97, 97);
+}
+
+th {
+    padding: 10px;
+    padding-right: 50px;
+    text-align: left;
+    color: white;
+    border: 2px solid rgb(97, 97, 97);
+    background-color: rgb(222, 71, 71);
+}
+
+h3 {
+    background-color: rgb(222, 71, 71);
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+tr:hover {
+    background-color: rgb(164, 248, 10);
+}
+
+#name {
+    width: 15em;
+}
+
+#comment {
+    height: 10em;
+    width: 40em;
+}
+
+#button {
+    padding: 12px;
+    color: white;
+    border-radius: 30px;
+    background-color: rgb(222, 71, 71);
+}
+
+/*
+* Media Queries
+*/
+@media screen and (max-width: 800px) {
+    #logo {
+        width: 100px;
+        height: 100px
+    }
+    .right {
+        float: none;
+    }
+    .left {
+        float: none;
+    }
+    .content img {
+        max-width: 50%;
+        max-height: 500px;
+        margin: auto;
+    }
+    p {
+        font-size: 18px;
+        padding-top: 0;
+    }
+    .menu {
+        display:none;
+        position:absolute;
+        background-color: aliceblue;
+        opacity: .95;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    .feedback {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .feedback {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .feedback {
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+}
